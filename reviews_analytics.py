@@ -16,3 +16,17 @@ sum_len = 0
 for i in data:
 	sum_len += len(i)
 print('Average review length is', sum_len/len(data))
+
+new = []  #如果要去算有多少的留言少於一百個字元的方式
+for i in data:
+	if len(i) < 100:
+		new.append(d)
+print(len(new))
+
+good = []  #如果要去算有多少的留言有good
+for i in data:
+	if 'good' in d:  #是非題的格式
+		good.append(d)
+print(len(good))
+
+
