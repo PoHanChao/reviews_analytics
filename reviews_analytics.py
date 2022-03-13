@@ -9,5 +9,10 @@ with open('reviews.txt', 'r') as f:
 		#如果要加上進度的話 
 		#但是每一次print的速度很慢
 		#所以我們每讀一千筆再回報一次
-print(len(data))
-print(data[0]) #印出第一個選項，從0 開始
+#print('There are',len(data), 'reviews in total')
+#print(data[0]) #印出第一個選項，從0 開始
+
+sum_len = 0
+for i in data:
+	sum_len += len(i)
+print('Average review length is', sum_len/len(data))
