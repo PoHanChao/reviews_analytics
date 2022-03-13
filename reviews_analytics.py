@@ -30,3 +30,14 @@ for i in data:
 print(len(good))
 
 
+#以下是快寫的方法
+good = [d for d in data if 'good' in d]
+#list comprehension快寫法做篩選
+
+#判斷留言是否有bad==>結果會是ture false
+bad = ['bad' in d for d in data]  
+
+#另一種方式
+bad = []
+for d in data:
+	bad.append('bad' in d)
